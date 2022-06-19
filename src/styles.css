@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+html{
+  max-height: 100vh !important;
+}
+*{
+  margin:0;
+  padding:0;
+}
+
+
+.brand{
+  width: 140px;
+}

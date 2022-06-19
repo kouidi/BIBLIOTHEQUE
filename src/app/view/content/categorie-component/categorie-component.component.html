@@ -1,0 +1,27 @@
+<div class="container" style="height: 50vh;">
+  <div class="row">
+    <div class="col-12">
+      <form method="get" action="addCategorie">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <label>Nom de la categorie</label>
+            <input name="nom" type="text" class="form-control" [(ngModel)]="nomCat">
+          </div>
+        </div>
+        <div class="row justify-content-center pt-3">
+          <div class="col-6">
+            <div class="d-grid gap-1">
+              <ng-container *ngIf="id>0">
+                <input (click)="updateCategorie(id)" type="button" type="submit" class="btn btn-primary" value="Enregister">
+              </ng-container>
+              <ng-container *ngIf="id==0">
+                <input (click)="addCategorie()" type="button" type="submit" class="btn btn-primary" value="Enregister">
+              </ng-container>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

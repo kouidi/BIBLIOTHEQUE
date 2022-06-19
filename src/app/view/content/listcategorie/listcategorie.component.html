@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-dark">
+        <tr>
+          <th>num</th>
+          <th>Nom</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let cat of categorie ">
+          <td>{{cat.num}}</td>
+          <td>{{cat.nom}}</td>
+          <td class="w-25">
+              <button class="btn btn-warning mr-4" [routerLink]="['/getCategirie',cat.num]" >Modifier</button>
+              <button class="btn btn-danger" (click)="deleteCategorieFromList(cat.num)">Supprimer</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

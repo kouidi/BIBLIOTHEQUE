@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './view/menu/menu.component';
 import { FooterComponent } from './view/footer/footer.component';
 import { ContentComponent } from './view/content/content.component';
+import { CategorieComponentComponent } from './view/content/categorie-component/categorie-component.component';
+import {FormsModule} from "@angular/forms";
+import { ListcategorieComponent } from './view/content/listcategorie/listcategorie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    CategorieComponentComponent,
+    ListcategorieComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

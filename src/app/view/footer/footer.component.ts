@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MyListGeneriqueObject} from "../../my-list-generique-object";
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  year= new Date().getFullYear();
+  categorie = MyListGeneriqueObject.arrayCategorie;
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
